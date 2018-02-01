@@ -45,6 +45,28 @@ pip install -r doc/requirements.txt
 ```
 ------------------
 
+## Iniciando Jupyter para desenvolvimento remoto
 
-## ToDo
+- Para configurar acesso remoto da IDE.
+
+```sh
+mkdir ~/.jupyter
+cp doc/jupyter_notebook_config.py ~/.jupyter/jupyter_notebook_config.py
+```
+
+- Atualizar senha de acesso remoto via browser.
+
+```sh
+jupyter notebook password
+  Enter password:  ****
+  Verify password: ****
+  [NotebookPasswordApp] Wrote hashed password to /home/nvidia/.jupyter/jupyter_notebook_config.json
+```
+
+- Iniciar o processo da IDE.
+
+```sh
+jupyter notebook
+```
+
 ------------------
